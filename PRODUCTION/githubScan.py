@@ -33,7 +33,6 @@ class PollinationsTokenScanner:
         findings = []
         lines = text.split('\n')
         for line_num, line in enumerate(lines, 1):
-            # Find all potential tokens using regex
             matches = self.token_regex.findall(line)
             
             for token in matches:
